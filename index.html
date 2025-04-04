@@ -24,19 +24,27 @@
 
     .hero {
       background: linear-gradient(145deg, #f9fafb 0%, #e8eef4 100%);
-      padding: 4rem 2rem;
+      padding: 5rem 2rem 4rem;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    .hero .brand-name {
+      font-size: 3.5rem;
+      font-weight: 700;
       color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .hero h2 {
+      font-size: 1.75rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
     }
 
     .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
+      font-size: 1.15rem;
+      max-width: 640px;
       margin: 0 auto;
       color: var(--text-light);
     }
@@ -98,34 +106,13 @@
       margin-top: 3rem;
     }
 
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .nav img {
-      max-height: 40px;
-    }
-
-    .nav-title {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: var(--primary);
-    }
-
   </style>
 </head>
 <body>
 
   <div class="hero">
-    <div class="nav">
-      <img src="logo.png" alt="Bible Mentor AI Logo"/>
-      <div class="nav-title">Bible Mentor AI</div>
-    </div>
-    <h1>Helping You Walk with Jesus</h1>
+    <div class="brand-name">Bible Mentor AI</div>
+    <h2>Helping You Walk with Jesus</h2>
     <p>Personalized devotionals, daily Bible study, and spiritual mentorship—delivered through intelligent guidance rooted in Scripture.</p>
     <a href="mailto:markhouston@biblementorai.org" class="cta-button">Contact Us</a>
   </div>
