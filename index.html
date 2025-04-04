@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Bible Mentor AI helps you grow in faith with personalized devotionals, Bible studies, and spiritual guidance rooted in Scripture."/>
   <title>Bible Mentor AI</title>
   <style>
     :root {
       --primary: #2D4F6B;
+      --secondary: #E5E8EC;
       --light-bg: #F9FAFB;
-      --gray: #E5E8EC;
-      --text-dark: #333;
+      --text-dark: #222;
       --text-light: #666;
     }
 
@@ -19,87 +19,144 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: var(--light-bg);
       color: var(--text-dark);
+      line-height: 1.6;
     }
 
-    header {
-      padding: 3rem 1rem 2rem;
+    .hero {
+      background: linear-gradient(145deg, #f9fafb 0%, #e8eef4 100%);
+      padding: 4rem 2rem;
       text-align: center;
-      background-color: white;
     }
 
-    header img {
-      max-width: 140px;
+    .hero h1 {
+      font-size: 3rem;
       margin-bottom: 1rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.25rem;
       color: var(--primary);
     }
 
-    header p {
-      font-size: 1.1rem;
-      color: var(--text-light);
-      margin: 0.75rem auto 0;
+    .hero p {
+      font-size: 1.2rem;
       max-width: 600px;
+      margin: 0 auto;
+      color: var(--text-light);
     }
 
-    .cta {
-      display: inline-block;
+    .cta-button {
       margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
+      padding: 0.9rem 1.8rem;
       background-color: var(--primary);
-      color: white;
+      color: #fff;
       border: none;
-      border-radius: 5px;
       font-size: 1rem;
+      border-radius: 6px;
       text-decoration: none;
+      display: inline-block;
     }
 
-    .cta:hover {
-      background-color: #213b4e;
+    .cta-button:hover {
+      background-color: #1f3b4d;
     }
 
-    section {
-      max-width: 700px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
+    .section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
     }
 
-    section h2 {
-      color: var(--primary);
+    .section h2 {
       font-size: 1.75rem;
+      color: var(--primary);
       margin-bottom: 1rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      flex: 1 1 250px;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .feature h3 {
+      color: var(--primary);
+      margin-top: 0;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      background-color: white;
-      color: var(--text-light);
+      padding: 2rem;
       font-size: 0.9rem;
+      color: var(--text-light);
+      background-color: #fff;
+      margin-top: 3rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .nav img {
+      max-height: 40px;
+    }
+
+    .nav-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--primary);
     }
 
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Bible Mentor AI logo" />
-    <h1>Bible Mentor AI</h1>
-    <p>Helping you walk with Jesus—daily. Personalized devotionals, Bible studies, and spiritual guidance rooted in Scripture.</p>
-    <a class="cta" href="mailto:markhouston@biblementorai.org">Contact Us</a>
-  </header>
 
-  <section>
-    <h2>About the Mission</h2>
-    <p>Bible Mentor AI was built to support people who want to grow in faith—whether you’re just beginning or deepening your walk with Christ. The platform delivers daily truth and encouragement through modern tools, but with timeless purpose.</p>
-    <p>We're combining spiritual mentorship with intelligent technology—so anyone, anywhere, can explore the Word with guidance.</p>
-    <p> App Release: Q4 2025 </p>
-  </section>
+  <div class="hero">
+    <div class="nav">
+      <img src="logo.png" alt="Bible Mentor AI Logo"/>
+      <div class="nav-title">Bible Mentor AI</div>
+    </div>
+    <h1>Helping You Walk with Jesus</h1>
+    <p>Personalized devotionals, daily Bible study, and spiritual mentorship—delivered through intelligent guidance rooted in Scripture.</p>
+    <a href="mailto:markhouston@biblementorai.org" class="cta-button">Contact Us</a>
+  </div>
+
+  <div class="section">
+    <h2>Our Mission</h2>
+    <p>Bible Mentor AI was built for people who want more than just a daily verse. Whether you're just starting your journey with Christ or growing deeper in faith, our tools meet you where you are—every day. We pair spiritual mentorship with modern technology to make faith feel real, actionable, and deeply personal.</p>
+    <p><strong>App Release:</strong> Q4 2025</p>
+  </div>
+
+  <div class="section">
+    <h2>What You'll Experience</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🕊️ Daily Word</h3>
+        <p>Wake up to a devotional personalized to your current walk—directly rooted in Scripture.</p>
+      </div>
+      <div class="feature">
+        <h3>💬 Ask Your Mentor</h3>
+        <p>Explore faith questions in a judgment-free zone—Bible Mentor gives clear, loving answers.</p>
+      </div>
+      <div class="feature">
+        <h3>🌱 Grace → Growth</h3>
+        <p>Track your spiritual journey with practical steps and personal reflection moments.</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 Bible Mentor AI. All rights reserved.
   </footer>
+
 </body>
 </html>
